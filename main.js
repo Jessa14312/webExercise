@@ -28,19 +28,19 @@ text displayed in the element created. The said element would then
 be added to the body.*/
 
 function parameter( id, element, text){
-  var div=document.getElementsByTagName("DIV");
-  console.log(div);
-  var a= document.createElement(element);
-  a.id= id;
+  var a = document.createElement(element);
+  a.id = id;
   a.innerText= text;
   a.style.textAlign="center";
   a.classList.add("Jessa");
-  document.body.appendChild(a);
+  document.body.append(a);
 } 
-parameter(" header","h1"," sheytttttt");
+parameter(" header","h1","#3. sheytttttt");
 
 
-/* Problem 1 Moderate_ Write a Javascript program wherein you have button1 and
+
+/* Problem 1 Moderate
+ Write a Javascript program wherein you have button1 and
 button2. Button1 would have text inside displayed as “0”
 (zero) and button2 would have text inside displayed as
 “Neutral”. Whenever you click on button1, the text displayed
@@ -51,7 +51,21 @@ number in button1 is divisible by both 3 and 5.
 Extra Points: Set the color for Fizz as red, Buzz as blue, and
 Fizzbuzz as the color represented when you mix red and blue. */
 
-var 
+//number5
+function check(){
+  var radio = document.getElementsByClassName('radio'); 
+  for( var count = 0; count < radio.length; count++){
+       radio[count].checked = true;
+  }
+
+}
+
+function uncheck(){
+  var radio = document.getElementsByClassName('radio'); 
+  for( var count = 0; count < radio.length; count++){
+       radio[count].checked = false;
+  }
+}
 
 
 
