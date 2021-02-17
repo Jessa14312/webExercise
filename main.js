@@ -1,3 +1,5 @@
+
+//Problem 1
 function insert_Row()
 {
 var x=document.getElementById('sampleTable').insertRow(1);
@@ -32,10 +34,10 @@ function parameter( id, element, text){
   a.id = id;
   a.innerText= text;
   a.style.textAlign="center";
-  a.classList.add("Jessa");
-  document.body.append(a);
+ document.body.append(a);
+ 
 } 
-parameter(" header","h1","#3. sheytttttt");
+
 
 
 
@@ -51,7 +53,37 @@ number in button1 is divisible by both 3 and 5.
 Extra Points: Set the color for Fizz as red, Buzz as blue, and
 Fizzbuzz as the color represented when you mix red and blue. */
 
-//number5
+
+
+  var count = parseInt(1);
+
+ function fizzbuzz(){
+ 
+
+    var button1 = document.getElementById("button1").innerHTML = value = count++;
+
+   if (button1 % 3==0 && button1 % 5 == 0) {
+     document.getElementById("button2").innerHTML="FizzBuzz";
+     document.getElementById("button2").style.color="violet";
+  } else if (button1%3==0) {
+     document.getElementById("button2").innerHTML="Fizz";
+   document.getElementById("button2").style.color="red";  
+   }
+  else if(button1%5==0){
+     document.getElementById("button2").innerHTML="Buzz";
+     document.getElementById("button2").style.color="blue";
+    
+  }
+  else{
+   document.getElementById("button2").innerHTML="NEUTRAL";
+    document.getElementById("button2").style.color="gray";
+    }
+  
+}
+
+
+//Problem 2 Moderate
+
 function check(){
   var radio = document.getElementsByClassName('radio'); 
   for( var count = 0; count < radio.length; count++){
